@@ -1,0 +1,197 @@
+
+/* General settings */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: #243247;
+    background: #f4f7fb;
+    line-height: 1.7;
+}
+
+.container {
+    width: 90%;
+    max-width: 1100px;
+    margin: auto;
+}
+
+header {
+    background: #12315a;
+    color: white;
+    padding: 20px 0;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.logo {
+    margin: 0;
+    font-size: 24px;
+}
+
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px 16px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+nav a:hover {
+    color: #ffd166;
+    text-decoration: underline;
+}
+
+.hero {
+    background: linear-gradient(120deg, #12315a, #2878b5);
+    color: white;
+    text-align: center;
+    padding: 65px 20px;
+}
+
+.hero h2 {
+    font-size: 36px;
+    line-height: 1.25;
+}
+
+.hero p {
+    max-width: 650px;
+    margin: 20px auto;
+}
+
+.button {
+    display: inline-block;
+    background: #ffd166;
+    color: #12315a;
+    padding: 11px 20px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+    margin: 5px;
+}
+
+.button:hover {
+    background: #ffe29a;
+}
+
+section {
+    padding: 35px 0;
+}
+
+h2, h3 {
+    color: #12315a;
+}
+
+.hero h2 {
+    color: white;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.card {
+    background: white;
+    padding: 22px;
+    border-radius: 10px;
+    box-shadow: 0 3px 12px #102a4314;
+    border: 1px solid #e0e7f0;
+}
+
+.card h3 {
+    margin-top: 0;
+}
+
+.page-banner {
+    background: #e2edfa;
+    padding: 30px 0;
+}
+
+.page-banner h2 {
+    margin: 0;
+}
+
+.content-box {
+    background: white;
+    padding: 25px;
+    margin: 25px auto;
+    border-radius: 10px;
+    box-shadow: 0 3px 12px #102a4314;
+}
+
+ul, ol {
+    padding-left: 25px;
+}
+
+form {
+    display: grid;
+    gap: 12px;
+}
+
+label {
+    font-weight: bold;
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #bdc9d8;
+    border-radius: 5px;
+    font: inherit;
+}
+
+textarea {
+    min-height: 130px;
+    resize: vertical;
+}
+
+button {
+    background: #12315a;
+    color: white;
+    border: 0;
+    border-radius: 5px;
+    padding: 13px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+footer {
+    background: #12315a;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 30px;
+}
+
+footer p {
+    margin: 4px;
+}
+
+@media (max-width: 750px) {
+    .grid {
+        grid-template-columns: 1fr;
+    }
+
+    .header-content {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .hero h2 {
+        font-size: 28px;
+    }
+}
